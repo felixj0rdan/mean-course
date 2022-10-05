@@ -1,0 +1,9 @@
+Sep 21 15:31:49 ip-172-31-5-199 web: > mean-course@0.0.0 start
+Sep 21 15:31:49 ip-172-31-5-199 web: > node server.js
+Sep 21 15:31:52 ip-172-31-5-199 web: Connection failed: MongoServerError: bad auth : Authentication failed.
+Sep 21 15:36:57 ip-172-31-5-199 web: > mean-course@0.0.0 start
+Sep 21 15:36:57 ip-172-31-5-199 web: > node server.js
+Sep 21 15:36:59 ip-172-31-5-199 web: Connection failed: MongoServerError: bad auth : Authentication failed.
+Sep 21 15:41:26 ip-172-31-5-199 web: > mean-course@0.0.0 start
+Sep 21 15:41:26 ip-172-31-5-199 web: > node server.js
+Sep 21 15:41:28 ip-172-31-5-199 web: Connection failed: MongoServerError: bad auth : Authentication failed.

@@ -1,0 +1,1590 @@
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Linux version 4.14.290-217.505.amzn2.x86_64 (mockbuild@ip-10-0-54-84) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-13) (GCC)) #1 SMP Wed Aug 10 09:52:16 UTC 2022
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-4.14.290-217.505.amzn2.x86_64 root=UUID=d784ecf4-c440-404a-99f8-4958c6bdd438 ro console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0 LANG=en_US.UTF-8 KEYTABLE=us
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: e820: BIOS-provided physical RAM map:
+Sep 21 15:30:46 ip-172-31-5-199 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+Sep 21 15:30:46 ip-172-31-5-199 kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003fffffff] usable
+Sep 21 15:30:46 ip-172-31-5-199 kernel: BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff] reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NX (Execute Disable) protection: active
+Sep 21 15:30:46 ip-172-31-5-199 kernel: SMBIOS 2.7 present.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: DMI: Xen HVM domU, BIOS 4.11.amazon 08/24/2006
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Hypervisor detected: Xen HVM
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Xen version 4.11.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.#012You might have to change the root device#012from /dev/hd[a-d] to /dev/xvd[a-d]#012in your root= kernel command line option
+Sep 21 15:30:46 ip-172-31-5-199 kernel: tsc: Fast TSC calibration using PIT
+Sep 21 15:30:46 ip-172-31-5-199 kernel: e820: last_pfn = 0x40000 max_arch_pfn = 0x400000000
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Sep 21 15:30:46 ip-172-31-5-199 kernel: found SMP MP-table at [mem 0x000fb9a0-0x000fb9af]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Scanning 1 areas for low memory corruption
+Sep 21 15:30:46 ip-172-31-5-199 kernel: RAMDISK: [mem 0x36bb3000-0x375d0fff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Early table checksum verification disabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: RSDP 0x00000000000EA020 000024 (v02 Xen   )
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: XSDT 0x00000000FC00C780 000054 (v01 Xen    HVM      00000000 HVML 00000000)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: FACP 0x00000000FC00C440 0000F4 (v04 Xen    HVM      00000000 HVML 00000000)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: DSDT 0x00000000FC003940 008A7E (v02 Xen    HVM      00000000 INTL 20090123)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: FACS 0x00000000FC003900 000040
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: FACS 0x00000000FC003900 000040
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: APIC 0x00000000FC00C540 0000D8 (v02 Xen    HVM      00000000 HVML 00000000)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: HPET 0x00000000FC00C690 000038 (v01 Xen    HVM      00000000 HVML 00000000)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: WAET 0x00000000FC00C6D0 000028 (v01 Xen    HVM      00000000 HVML 00000000)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: SSDT 0x00000000FC00C700 000031 (v02 Xen    HVM      00000000 INTL 20090123)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: SSDT 0x00000000FC00C740 000033 (v02 Xen    HVM      00000000 INTL 20090123)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving FACP table memory at [mem 0xfc00c440-0xfc00c533]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving DSDT table memory at [mem 0xfc003940-0xfc00c3bd]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving FACS table memory at [mem 0xfc003900-0xfc00393f]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving FACS table memory at [mem 0xfc003900-0xfc00393f]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving APIC table memory at [mem 0xfc00c540-0xfc00c617]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving HPET table memory at [mem 0xfc00c690-0xfc00c6c7]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving WAET table memory at [mem 0xfc00c6d0-0xfc00c6f7]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00c700-0xfc00c730]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00c740-0xfc00c772]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: No NUMA configuration found
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Faking a node at [mem 0x0000000000000000-0x000000003fffffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NODE_DATA(0) allocated [mem 0x3ffde000-0x3fffffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Zone ranges:
+Sep 21 15:30:46 ip-172-31-5-199 kernel:  DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel:  DMA32    [mem 0x0000000001000000-0x000000003fffffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel:  Normal   empty
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Movable zone start for each node
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Early memory node ranges
+Sep 21 15:30:46 ip-172-31-5-199 kernel:  node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel:  node   0: [mem 0x0000000000100000-0x000000003fffffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000003fffffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: PM-Timer IO Port: 0xb008
+Sep 21 15:30:46 ip-172-31-5-199 kernel: IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Using ACPI (MADT) for SMP configuration information
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Sep 21 15:30:46 ip-172-31-5-199 kernel: TSC deadline timer available
+Sep 21 15:30:46 ip-172-31-5-199 kernel: smpboot: Allowing 15 CPUs, 14 hotplug CPUs
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: e820: [mem 0x40000000-0xfbffffff] available for PCI devices
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Booting paravirtualized kernel on Xen HVM
+Sep 21 15:30:46 ip-172-31-5-199 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Sep 21 15:30:46 ip-172-31-5-199 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:15 nr_cpu_ids:15 nr_node_ids:1
+Sep 21 15:30:46 ip-172-31-5-199 kernel: percpu: Embedded 49 pages/cpu s161688 r8192 d30824 u262144
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Fallback order for Node 0: 0 
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 257928
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Policy zone: DMA32
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.14.290-217.505.amzn2.x86_64 root=UUID=d784ecf4-c440-404a-99f8-4958c6bdd438 ro console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0 LANG=en_US.UTF-8 KEYTABLE=us
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Memory: 990176K/1048180K available (10252K kernel code, 2143K rwdata, 3036K rodata, 2224K init, 4244K bss, 58004K reserved, 0K cma-reserved)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Kernel/User page tables isolation: enabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ftrace: allocating 30152 entries in 118 pages
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Hierarchical RCU implementation.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: #011RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=15.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=15
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NR_IRQS: 524544, nr_irqs: 952, preallocated irqs: 16
+Sep 21 15:30:46 ip-172-31-5-199 kernel: xen:events: Using 2-level ABI
+Sep 21 15:30:46 ip-172-31-5-199 kernel: xen:events: Xen HVM callback vector for event delivery is enabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: random: crng init done
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Console: colour VGA+ 80x25
+Sep 21 15:30:46 ip-172-31-5-199 kernel: console [tty0] enabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Sep 21 15:30:46 ip-172-31-5-199 kernel: console [ttyS0] enabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 30580167144 ns
+Sep 21 15:30:46 ip-172-31-5-199 kernel: tsc: Fast TSC calibration using PIT
+Sep 21 15:30:46 ip-172-31-5-199 kernel: tsc: Detected 2399.993 MHz processor
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4800.01 BogoMIPS (lpj=9600024)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pid_max: default: 32768 minimum: 301
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Core revision 20170728
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Security Framework initialized
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Yama: becoming mindful.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: SELinux:  Initializing.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Spectre V2 : Mitigation: Retpolines
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Speculative Store Bypass: Vulnerable
+Sep 21 15:30:46 ip-172-31-5-199 kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Sep 21 15:30:46 ip-172-31-5-199 kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Sep 21 15:30:46 ip-172-31-5-199 kernel: smpboot: Max logical packages: 15
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x2apic: IRQ remapping doesn't support X2APIC mode
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Switched APIC routing to physical flat.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: clocksource: xen: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Sep 21 15:30:46 ip-172-31-5-199 kernel: installing Xen timer for CPU 0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz (family: 0x6, model: 0x3f, stepping: 0x2)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: cpu 0 spinlock event irq 53
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Performance Events: unsupported p6 CPU model 63 no PMU driver, software events only.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Hierarchical SRCU implementation.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NMI watchdog: Perf event create on CPU 0 failed with -2
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: smp: Bringing up secondary CPUs ...
+Sep 21 15:30:46 ip-172-31-5-199 kernel: smp: Brought up 1 node, 1 CPU
+Sep 21 15:30:46 ip-172-31-5-199 kernel: smpboot: Total of 1 processors activated (4800.01 BogoMIPS)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: devtmpfs: initialized
+Sep 21 15:30:46 ip-172-31-5-199 kernel: x86/mm: Memory block size: 128MB
+Sep 21 15:30:46 ip-172-31-5-199 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Sep 21 15:30:46 ip-172-31-5-199 kernel: futex hash table entries: 4096 (order: 6, 262144 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NET: Registered protocol family 16
+Sep 21 15:30:46 ip-172-31-5-199 kernel: cpuidle: using governor ladder
+Sep 21 15:30:46 ip-172-31-5-199 kernel: cpuidle: using governor menu
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: bus type PCI registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PCI: Using configuration type 1 for base access
+Sep 21 15:30:46 ip-172-31-5-199 kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Added _OSI(Module Device)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Added _OSI(Processor Device)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Interpreter enabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: (supports S0 S4 S5)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Using IOAPIC for interrupt routing
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [0] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [3] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [4] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [5] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [6] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [7] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [8] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [9] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [10] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [11] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [12] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [13] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [14] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [15] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [16] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [17] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [18] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [19] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [20] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [21] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [22] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [23] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [24] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [25] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [26] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [27] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [28] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [29] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [30] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: acpiphp: Slot [31] registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PCI host bridge to bus 0000:00
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfbffffff window]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,#012* this clock source is slow. Consider trying other clock sources
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs *5 10 11)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs *5 10 11)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: xen:balloon: Initialising balloon driver
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Sep 21 15:30:46 ip-172-31-5-199 kernel: vgaarb: loaded
+Sep 21 15:30:46 ip-172-31-5-199 kernel: EDAC MC: Ver: 3.0.0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: PCI: Using ACPI for IRQ routing
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NetLabel: Initializing
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NetLabel:  domain hash size = 128
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NetLabel:  unlabeled traffic allowed by default
+Sep 21 15:30:46 ip-172-31-5-199 kernel: HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+Sep 21 15:30:46 ip-172-31-5-199 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+Sep 21 15:30:46 ip-172-31-5-199 kernel: clocksource: Switched to clocksource xen
+Sep 21 15:30:46 ip-172-31-5-199 kernel: VFS: Disk quotas dquot_6.6.0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pnp: PnP ACPI init
+Sep 21 15:30:46 ip-172-31-5-199 kernel: system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: system 00:01: [io  0x08a0-0x08a3] has been reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: system 00:01: [io  0x0cc0-0x0ccf] has been reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: system 00:01: [io  0x04d0-0x04d1] has been reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: system 00:07: [io  0x10c0-0x1141] has been reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: system 00:07: [io  0xb044-0xb047] has been reserved
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pnp: PnP ACPI: found 8 devices
+Sep 21 15:30:46 ip-172-31-5-199 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NET: Registered protocol family 2
+Sep 21 15:30:46 ip-172-31-5-199 kernel: IP idents hash table entries: 16384 (order: 5, 131072 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: TCP: Hash tables configured (established 8192 bind 8192)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: UDP hash table entries: 512 (order: 2, 16384 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NET: Registered protocol family 1
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Sep 21 15:30:46 ip-172-31-5-199 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Unpacking initramfs...
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Freeing initrd memory: 10360K
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Scanning for low memory corruption every 60 seconds
+Sep 21 15:30:46 ip-172-31-5-199 kernel: audit: initializing netlink subsys (disabled)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Initialise system trusted keyrings
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Key type blacklist registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: audit: type=2000 audit(1663774245.096:1): state=initialized audit_enabled=0 res=1
+Sep 21 15:30:46 ip-172-31-5-199 kernel: workingset: timestamp_bits=36 max_order=18 bucket_order=0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: zbud: loaded
+Sep 21 15:30:46 ip-172-31-5-199 kernel: SGI XFS with ACLs, security attributes, no debug enabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Key type asymmetric registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Asymmetric key parser 'x509' registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: io scheduler noop registered (default)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: io scheduler cfq registered
+Sep 21 15:30:46 ip-172-31-5-199 kernel: crc32: CRC_LE_BITS = 64, CRC_BE BITS = 64
+Sep 21 15:30:46 ip-172-31-5-199 kernel: crc32: self tests passed, processed 225944 bytes in 161544 nsec
+Sep 21 15:30:46 ip-172-31-5-199 kernel: crc32c: CRC_LE_BITS = 64
+Sep 21 15:30:46 ip-172-31-5-199 kernel: crc32c: self tests passed, processed 225944 bytes in 80847 nsec
+Sep 21 15:30:46 ip-172-31-5-199 kernel: crc32_combine: 8373 self tests passed
+Sep 21 15:30:46 ip-172-31-5-199 kernel: crc32c_combine: 8373 self tests passed
+Sep 21 15:30:46 ip-172-31-5-199 kernel: xen:grant_table: Grant tables using version 1 layout
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Grant table initialized
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+Sep 21 15:30:46 ip-172-31-5-199 kernel: 00:06: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Sep 21 15:30:46 ip-172-31-5-199 kernel: xen_netfront: Initialising Xen virtual ethernet driver
+Sep 21 15:30:46 ip-172-31-5-199 kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Sep 21 15:30:46 ip-172-31-5-199 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Sep 21 15:30:46 ip-172-31-5-199 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Sep 21 15:30:46 ip-172-31-5-199 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: rtc_cmos 00:02: rtc core: registered rtc_cmos as rtc0
+Sep 21 15:30:46 ip-172-31-5-199 kernel: rtc_cmos 00:02: alarms up to one day, 114 bytes nvram, hpet irqs
+Sep 21 15:30:46 ip-172-31-5-199 kernel: hidraw: raw HID events driver (C) Jiri Kosina
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NET: Registered protocol family 10
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Segment Routing with IPv6
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ip6_tables: (C) 2000-2006 Netfilter Core Team
+Sep 21 15:30:46 ip-172-31-5-199 kernel: NET: Registered protocol family 17
+Sep 21 15:30:46 ip-172-31-5-199 kernel: mce: Using 2 MCE banks
+Sep 21 15:30:46 ip-172-31-5-199 kernel: sched_clock: Marking stable (1364999957, 0)->(2612334196, -1247334239)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: registered taskstats version 1
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Loading compiled-in X.509 certificates
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 35a379c628e28b3ae1a3b4b2183b276ef4b7d40f'
+Sep 21 15:30:46 ip-172-31-5-199 kernel: zswap: loaded using pool lzo/zbud
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: ima: Allocated hash algorithm: sha1
+Sep 21 15:30:46 ip-172-31-5-199 kernel: xenbus_probe_frontend: Device with no driver: device/vbd/51712
+Sep 21 15:30:46 ip-172-31-5-199 kernel: rtc_cmos 00:02: setting system clock to 2022-09-21 15:30:46 UTC (1663774246)
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Freeing unused kernel memory: 2224K
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Write protecting the kernel read-only data: 16384k
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Freeing unused kernel memory: 2016K
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Freeing unused kernel memory: 1060K
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Inserted module 'autofs4'
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Detected virtualization xen.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Detected architecture x86-64.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Running in initial RAM disk.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: No hostname configured.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Set hostname to <localhost>.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Initializing machine ID from random generator.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Created slice Root Slice.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Reached target Swap.
+Sep 21 15:30:46 ip-172-31-5-199 systemd[1]: Listening on Journal Socket.
+Sep 21 15:30:46 ip-172-31-5-199 journal: Journal started
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Starting Create Static Device Nodes in /dev...
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Started Create Static Device Nodes in /dev.
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Starting udev Kernel Device Manager...
+Sep 21 15:30:46 ip-172-31-5-199 systemd-udevd: starting version 219
+Sep 21 15:30:46 ip-172-31-5-199 systemd-udevd: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Started udev Kernel Device Manager.
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Starting dracut pre-trigger hook...
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Started dracut pre-trigger hook.
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Starting udev Coldplug all Devices...
+Sep 21 15:30:46 ip-172-31-5-199 systemd-udevd: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Started udev Coldplug all Devices.
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Starting dracut initqueue hook...
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Reached target System Initialization.
+Sep 21 15:30:46 ip-172-31-5-199 systemd: Reached target Basic System.
+Sep 21 15:30:46 ip-172-31-5-199 kernel: tsc: Refined TSC clocksource calibration: 2399.988 MHz
+Sep 21 15:30:46 ip-172-31-5-199 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x22982c12b6d, max_idle_ns: 440795281273 ns
+Sep 21 15:30:46 ip-172-31-5-199 kernel: SCSI subsystem initialized
+Sep 21 15:30:46 ip-172-31-5-199 kernel: Invalid max_queues (4), will use default max: 1.
+Sep 21 15:30:47 ip-172-31-5-199 kernel: scsi host0: ata_piix
+Sep 21 15:30:47 ip-172-31-5-199 kernel: scsi host1: ata_piix
+Sep 21 15:30:47 ip-172-31-5-199 kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+Sep 21 15:30:47 ip-172-31-5-199 kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+Sep 21 15:30:47 ip-172-31-5-199 kernel: blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled; bounce buffer: disabled;
+Sep 21 15:30:47 ip-172-31-5-199 kernel: xvda: xvda1
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Found device /dev/disk/by-uuid/d784ecf4-c440-404a-99f8-4958c6bdd438.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Starting File System Check on /dev/disk/by-uuid/d784ecf4-c440-404a-99f8-4958c6bdd438...
+Sep 21 15:30:47 ip-172-31-5-199 systemd-fsck: fsck.xfs doesn't exist, not checking file system on /dev/disk/by-uuid/d784ecf4-c440-404a-99f8-4958c6bdd438
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Started dracut initqueue hook.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Started File System Check on /dev/disk/by-uuid/d784ecf4-c440-404a-99f8-4958c6bdd438.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Mounting /sysroot...
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Reached target Remote File Systems (Pre).
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Reached target Remote File Systems.
+Sep 21 15:30:47 ip-172-31-5-199 kernel: XFS (xvda1): Mounting V5 Filesystem
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Mounted /sysroot.
+Sep 21 15:30:47 ip-172-31-5-199 kernel: XFS (xvda1): Ending clean mount
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Reached target Initrd Root File System.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Starting Reload Configuration from the Real Root...
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Started Reload Configuration from the Real Root.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Reached target Initrd File Systems.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Reached target Initrd Default Target.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Starting dracut pre-pivot and cleanup hook...
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Started dracut pre-pivot and cleanup hook.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Starting Cleaning Up and Shutting Down Daemons...
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Started Cleaning Up and Shutting Down Daemons.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped dracut pre-pivot and cleanup hook.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Remote File Systems.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Remote File Systems (Pre).
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped dracut initqueue hook.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Timers.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Initrd Default Target.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Basic System.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target System Initialization.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Swap.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped udev Coldplug all Devices.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped dracut pre-trigger hook.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopping udev Kernel Device Manager...
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Local File Systems.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped Apply Kernel Variables.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Slices.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Paths.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped Dispatch Password Requests to Console Directory Watch.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped target Sockets.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped udev Kernel Device Manager.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped Create Static Device Nodes in /dev.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Stopped Create list of required static device nodes for the current kernel.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Closed udev Kernel Socket.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Closed udev Control Socket.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Starting Cleanup udevd DB...
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Started Cleanup udevd DB.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Reached target Switch Root.
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Starting Switch Root...
+Sep 21 15:30:47 ip-172-31-5-199 systemd: Switching root.
+Sep 21 15:30:47 ip-172-31-5-199 journal: Journal stopped
+Sep 21 15:30:48 ip-172-31-5-199 journal: Runtime journal is using 6.1M (max allowed 49.1M, trying to leave 73.6M free of 478.8M available → current limit 49.1M).
+Sep 21 15:30:48 ip-172-31-5-199 systemd-journald[972]: Received SIGTERM from PID 1 (systemd).
+Sep 21 15:30:48 ip-172-31-5-199 kernel: systemd: 15 output lines suppressed due to ratelimiting
+Sep 21 15:30:48 ip-172-31-5-199 kernel: SELinux:  Disabled at runtime.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: audit: type=1404 audit(1663774247.804:2): selinux=0 auid=4294967295 ses=4294967295
+Sep 21 15:30:48 ip-172-31-5-199 journal: Journal started
+Sep 21 15:30:48 ip-172-31-5-199 systemd: systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Detected virtualization xen.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Detected architecture x86-64.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Set hostname to <ip-172-31-41-218.ap-south-1.compute.internal>.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Cannot add dependency job for unit display-manager.service, ignoring: Unit not found.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Create list of required static device nodes for the current kernel.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Read and set NIS domainname from /etc/sysconfig/network.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Setup Virtual Console.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Remount Root and Kernel File Systems.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started LVM2 metadata daemon.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting udev Coldplug all Devices...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Relabel kernel modules early in the boot, if needed...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Configure read-only root support...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Create Static Device Nodes in /dev...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Flush Journal to Persistent Storage...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Relabel kernel modules early in the boot, if needed.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Create Static Device Nodes in /dev.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Configure read-only root support.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started udev Coldplug all Devices.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting udev Wait for Complete Device Initialization...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Load/Save Random Seed...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting udev Kernel Device Manager...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Load Kernel Modules...
+Sep 21 15:30:48 ip-172-31-5-199 systemd-udevd: starting version 219
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Flush Journal to Persistent Storage.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Load/Save Random Seed.
+Sep 21 15:30:48 ip-172-31-5-199 systemd-udevd: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Sep 21 15:30:48 ip-172-31-5-199 systemd-modules-load: Inserted module 'ena'
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Load Kernel Modules.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Apply Kernel Variables...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Apply Kernel Variables.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started udev Kernel Device Manager.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Show Plymouth Boot Screen...
+Sep 21 15:30:48 ip-172-31-5-199 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+Sep 21 15:30:48 ip-172-31-5-199 kernel: ACPI: Power Button [PWRF]
+Sep 21 15:30:48 ip-172-31-5-199 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input4
+Sep 21 15:30:48 ip-172-31-5-199 kernel: ACPI: Sleep Button [SLPF]
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Received SIGRTMIN+20 from PID 2330 (plymouthd).
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Show Plymouth Boot Screen.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Forward Password Requests to Plymouth Directory Watch.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Found device /dev/ttyS0.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+Sep 21 15:30:48 ip-172-31-5-199 kernel: mousedev: PS/2 mouse device common for all mice
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Created slice system-ec2net\x2difup.slice.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Relabel kernel modules early in the boot, if needed...
+Sep 21 15:30:48 ip-172-31-5-199 kernel: AVX2 version of gcm_enc/dec engaged.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: AES CTR mode by8 optimization enabled
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Relabel kernel modules early in the boot, if needed.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: alg: No test for pcbc(aes) (pcbc-aes-aesni)
+Sep 21 15:30:48 ip-172-31-5-199 kernel: EDAC sbridge:  Ver: 1.1.2 
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started udev Wait for Complete Device Initialization.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Activation of DM RAID sets...
+Sep 21 15:30:48 ip-172-31-5-199 kernel: device-mapper: uevent: version 1.0.3
+Sep 21 15:30:48 ip-172-31-5-199 kernel: device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Activation of DM RAID sets.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target Local Encrypted Volumes.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target Local File Systems (Pre).
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target Local File Systems.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Preprocess NFS configuration...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Create Volatile Files and Directories...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Tell Plymouth To Write Out Runtime Data...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Preprocess NFS configuration.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Create Volatile Files and Directories.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Security Auditing Service...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Mounting RPC Pipe File System...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Tell Plymouth To Write Out Runtime Data.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: RPC: Registered named UNIX socket transport module.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: RPC: Registered udp transport module.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: RPC: Registered tcp transport module.
+Sep 21 15:30:48 ip-172-31-5-199 kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Mounted RPC Pipe File System.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target rpc_pipefs.target.
+Sep 21 15:30:48 ip-172-31-5-199 auditd[2469]: Started dispatcher: /sbin/audispd pid: 2471
+Sep 21 15:30:48 ip-172-31-5-199 auditd[2469]: Init complete, auditd 2.8.1 listening for events (startup state enable)
+Sep 21 15:30:48 ip-172-31-5-199 audispd: No plugins found, exiting
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: /sbin/augenrules: No change
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: No rules
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: enabled 1
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: failure 1
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: pid 2469
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: rate_limit 0
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: backlog_limit 8192
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: lost 0
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: backlog 1
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: backlog_wait_time 15000
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: enabled 1
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: failure 1
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: pid 2469
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: rate_limit 0
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: backlog_limit 8192
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: lost 0
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: backlog 1
+Sep 21 15:30:48 ip-172-31-5-199 augenrules: backlog_wait_time 15000
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Security Auditing Service.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Update UTMP about System Boot/Shutdown...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Update UTMP about System Boot/Shutdown.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target System Initialization.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Listening on RPCbind Server Activation Socket.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting RPC bind service...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Listening on D-Bus System Message Bus Socket.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target Sockets.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Daily Cleanup of Temporary Directories.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target Timers.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Flexible branding.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target Paths.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Reached target Basic System.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Login Service...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting ACPI Event Daemon...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Dump dmesg to /var/log/dmesg...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting NTP client/server...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started D-Bus System Message Bus.
+Sep 21 15:30:48 ip-172-31-5-199 acpid: starting up with netlink and the input layer
+Sep 21 15:30:48 ip-172-31-5-199 acpid: skipping incomplete file /etc/acpi/events/videoconf
+Sep 21 15:30:48 ip-172-31-5-199 acpid: 2 rules loaded
+Sep 21 15:30:48 ip-172-31-5-199 acpid: waiting for events: event logging is off
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Initial cloud-init job (pre-networking)...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started libstoragemgmt plug-in server daemon.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Resets System Activity Logs...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting GSSAPI Proxy Daemon...
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Starting Hardware RNG Entropy Gatherer Wake threshold service...
+Sep 21 15:30:48 ip-172-31-5-199 chronyd[2503]: chronyd version 4.2 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS -NTS +SECHASH +IPV6 +DEBUG)
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started irqbalance daemon.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started RPC bind service.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started ACPI Event Daemon.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Dump dmesg to /var/log/dmesg.
+Sep 21 15:30:48 ip-172-31-5-199 chronyd[2503]: Frequency 1.219 +/- 15.978 ppm read from /var/lib/chrony/drift
+Sep 21 15:30:48 ip-172-31-5-199 chronyd[2503]: Loaded seccomp filter (level 2)
+Sep 21 15:30:48 ip-172-31-5-199 /usr/sbin/irqbalance: Balancing is ineffective on systems with a single cpu.  Shutting down
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started NTP client/server.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Hardware RNG Entropy Gatherer Wake threshold service.
+Sep 21 15:30:48 ip-172-31-5-199 systemd: Started Resets System Activity Logs.
+Sep 21 15:30:49 ip-172-31-5-199 systemd-logind: New seat seat0.
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Started Login Service.
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Started Hardware RNG Entropy Gatherer Daemon.
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Started GSSAPI Proxy Daemon.
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Reached target NFS client services.
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Reached target Remote File Systems (Pre).
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Reached target Remote File Systems.
+Sep 21 15:30:49 ip-172-31-5-199 rngd: Disabling 5: JITTER Entropy generator (jitter)
+Sep 21 15:30:49 ip-172-31-5-199 rngd: Initializing available sources
+Sep 21 15:30:49 ip-172-31-5-199 rngd: Failed to init entropy source hwrng
+Sep 21 15:30:49 ip-172-31-5-199 rngd: Enabling RDRAND rng support
+Sep 21 15:30:49 ip-172-31-5-199 rngd: Initializing entropy source rdrand
+Sep 21 15:30:49 ip-172-31-5-199 cloud-init: Cloud-init v. 19.3-45.amzn2 running 'init-local' at Wed, 21 Sep 2022 15:30:49 +0000. Up 4.67 seconds.
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Started Initial cloud-init job (pre-networking).
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Reached target Network (Pre).
+Sep 21 15:30:49 ip-172-31-5-199 systemd: Starting LSB: Bring up/down networking...
+Sep 21 15:30:49 ip-172-31-5-199 network: Bringing up loopback interface:  [  OK  ]
+Sep 21 15:30:49 ip-172-31-5-199 network: Bringing up interface eth0:
+Sep 21 15:30:49 ip-172-31-5-199 dhclient[2669]: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 6 (xid=0x210cf1dc)
+Sep 21 15:30:49 ip-172-31-5-199 dhclient[2669]: DHCPREQUEST on eth0 to 255.255.255.255 port 67 (xid=0x210cf1dc)
+Sep 21 15:30:49 ip-172-31-5-199 dhclient[2669]: DHCPOFFER from 172.31.0.1
+Sep 21 15:30:49 ip-172-31-5-199 dhclient[2669]: DHCPACK from 172.31.0.1 (xid=0x210cf1dc)
+Sep 21 15:30:50 ip-172-31-5-199 NET: dhclient: Locked /run/dhclient/resolv.lock
+Sep 21 15:30:50 ip-172-31-5-199 NET[2728]: /usr/sbin/dhclient-script : updated /etc/resolv.conf
+Sep 21 15:30:50 ip-172-31-5-199 dhclient[2669]: bound to 172.31.5.199 -- renewal in 1517 seconds.
+Sep 21 15:30:50 ip-172-31-5-199 network: Determining IP information for eth0... done.
+Sep 21 15:30:50 ip-172-31-5-199 ec2net: [get_meta] Querying IMDS for meta-data/network/interfaces/macs/0a:24:49:0a:54:5c/local-ipv4s
+Sep 21 15:30:50 ip-172-31-5-199 ec2net: [get_meta] Getting token for IMDSv2.
+Sep 21 15:30:50 ip-172-31-5-199 ec2net: [get_meta] Trying to get http://169.254.169.254/latest/meta-data/network/interfaces/macs/0a:24:49:0a:54:5c/local-ipv4s
+Sep 21 15:30:50 ip-172-31-5-199 ec2net: [remove_aliases] Removing aliases of eth0
+Sep 21 15:30:50 ip-172-31-5-199 network: Determining IPv6 information for eth0... done.
+Sep 21 15:30:50 ip-172-31-5-199 network: [  OK  ]
+Sep 21 15:30:50 ip-172-31-5-199 systemd: Started LSB: Bring up/down networking.
+Sep 21 15:30:50 ip-172-31-5-199 systemd: Starting Initial cloud-init job (metadata service crawler)...
+Sep 21 15:30:50 ip-172-31-5-199 systemd: Reached target Network.
+Sep 21 15:30:50 ip-172-31-5-199 systemd: Starting Postfix Mail Transport Agent...
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: Cloud-init v. 19.3-45.amzn2 running 'init' at Wed, 21 Sep 2022 15:30:50 +0000. Up 5.78 seconds.
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: | Device |  Up  |           Address           |      Mask     | Scope  |     Hw-Address    |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |  eth0  | True |         172.31.5.199        | 255.255.240.0 | global | 0a:24:49:0a:54:5c |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |  eth0  | True | fe80::824:49ff:fe0a:545c/64 |       .       |  link  | 0a:24:49:0a:54:5c |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   lo   | True |          127.0.0.1          |   255.0.0.0   |  host  |         .         |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   lo   | True |           ::1/128           |       .       |  host  |         .         |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +++++++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++++++
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +-------+-----------------+------------+-----------------+-----------+-------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: | Route |   Destination   |  Gateway   |     Genmask     | Interface | Flags |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +-------+-----------------+------------+-----------------+-----------+-------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   0   |     0.0.0.0     | 172.31.0.1 |     0.0.0.0     |    eth0   |   UG  |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   1   | 169.254.169.254 |  0.0.0.0   | 255.255.255.255 |    eth0   |   UH  |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   2   |    172.31.0.0   |  0.0.0.0   |  255.255.240.0  |    eth0   |   U   |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +-------+-----------------+------------+-----------------+-----------+-------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +-------+-------------+---------+-----------+-------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: | Route | Destination | Gateway | Interface | Flags |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +-------+-------------+---------+-----------+-------+
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   9   |  fe80::/64  |    ::   |    eth0   |   U   |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   11  |    local    |    ::   |    eth0   |   U   |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: |   12  |   ff00::/8  |    ::   |    eth0   |   U   |
+Sep 21 15:30:50 ip-172-31-5-199 cloud-init: ci-info: +-------+-------------+---------+-----------+-------+
+Sep 21 15:30:50 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 1070ms.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Postfix Mail Transport Agent.
+Sep 21 15:30:51 ip-172-31-5-199 dbus[2497]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Hostname Service...
+Sep 21 15:30:51 ip-172-31-5-199 dbus[2497]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Sep 21 15:30:51 ip-172-31-5-199 systemd-hostnamed: Changed static host name to 'ip-172-31-5-199.ap-south-1.compute.internal'
+Sep 21 15:30:51 ip-172-31-5-199 systemd-hostnamed: Changed host name to 'ip-172-31-5-199.ap-south-1.compute.internal'
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Hostname Service.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Initial cloud-init job (metadata service crawler).
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Permit User Sessions...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting OpenSSH Server Key Generation...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Reached target Network is Online.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting System Logging Service...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Dynamically Generate Message Of The Day...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Notify NFS peers of a restart...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Finds and configures elastic network interfaces...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started amazon-ssm-agent.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Reached target Cloud-config availability.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Apply the settings specified in cloud-config...
+Sep 21 15:30:51 ip-172-31-5-199 sm-notify[2985]: Version 1.3.0 starting
+Sep 21 15:30:51 ip-172-31-5-199 ec2net: [ec2ifscan] Scanning for unconfigured interfaces
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Permit User Sessions.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Notify NFS peers of a restart.
+Sep 21 15:30:51 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="2983" x-info="http://www.rsyslog.com"] start
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started System Logging Service.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Finds and configures elastic network interfaces.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Terminate Plymouth Boot Screen...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting Wait for Plymouth Boot Screen to Quit...
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Command Scheduler.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Job spooling tools.
+Sep 21 15:30:51 ip-172-31-5-199 amazon-ssm-agent: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+Sep 21 15:30:51 ip-172-31-5-199 amazon-ssm-agent: Initializing new seelog logger
+Sep 21 15:30:51 ip-172-31-5-199 amazon-ssm-agent: New Seelog Logger Creation Complete
+Sep 21 15:30:51 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO Proxy environment variables:
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Dynamically Generate Message Of The Day.
+Sep 21 15:30:51 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO https_proxy:
+Sep 21 15:30:51 ip-172-31-5-199 sshd-keygen: Generating SSH2 RSA host key: [  OK  ]
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Received SIGRTMIN+21 from PID 2330 (plymouthd).
+Sep 21 15:30:51 ip-172-31-5-199 sshd-keygen: Generating SSH2 ECDSA host key: [  OK  ]
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Terminate Plymouth Boot Screen.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Wait for Plymouth Boot Screen to Quit.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Serial Getty on ttyS0.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started Getty on tty1.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Reached target Login Prompts.
+Sep 21 15:30:51 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO http_proxy:
+Sep 21 15:30:51 ip-172-31-5-199 sshd-keygen: Generating SSH2 ED25519 host key: [  OK  ]
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Started OpenSSH Server Key Generation.
+Sep 21 15:30:51 ip-172-31-5-199 systemd: Starting OpenSSH server daemon...
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Started OpenSSH server daemon.
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Reached target Multi-User System.
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Reached target Graphical Interface.
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Starting Update UTMP about System Runlevel Changes...
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Reached target aws-eb.target.
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Started Update UTMP about System Runlevel Changes.
+Sep 21 15:30:52 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 2160ms.
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO no_proxy:
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO Agent will take identity from EC2
+Sep 21 15:30:52 ip-172-31-5-199 cloud-init: Cloud-init v. 19.3-45.amzn2 running 'modules:config' at Wed, 21 Sep 2022 15:30:52 +0000. Up 7.21 seconds.
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO [amazon-ssm-agent] using named pipe channel for IPC
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Started Apply the settings specified in cloud-config.
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Starting Initial hibernation setup job...
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Starting Execute cloud user/final scripts...
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO [amazon-ssm-agent] using named pipe channel for IPC
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO [amazon-ssm-agent] using named pipe channel for IPC
+Sep 21 15:30:52 ip-172-31-5-199 hibinit-agent: Effective config: {'grub_update': True, 'swap_percentage': 100, 'log_to_syslog': True, 'touch_swap': False, 'state_dir': '/var/lib/hibinit-agent', 'swapoff': 'swapoff {swapfile}', 'mkswap': 'mkswap {swapfile}', 'swapon': 'swapon {swapfile}', 'swap_mb': 4000}
+Sep 21 15:30:52 ip-172-31-5-199 hibinit-agent: Requesting new IMDSv2 token.
+Sep 21 15:30:52 ip-172-31-5-199 hibinit-agent: Instance Launch has not enabled Hibernation Configured Flag. hibinit-agent exiting!!
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO [amazon-ssm-agent] amazon-ssm-agent - v3.1.1575.0
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Stopping ACPI Event Daemon...
+Sep 21 15:30:52 ip-172-31-5-199 acpid: exiting
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Stopped ACPI Event Daemon.
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Starting ACPI Event Daemon...
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Started ACPI Event Daemon.
+Sep 21 15:30:52 ip-172-31-5-199 systemd: Started Initial hibernation setup job.
+Sep 21 15:30:52 ip-172-31-5-199 acpid: starting up with netlink and the input layer
+Sep 21 15:30:52 ip-172-31-5-199 acpid: skipping incomplete file /etc/acpi/events/videoconf
+Sep 21 15:30:52 ip-172-31-5-199 acpid: 2 rules loaded
+Sep 21 15:30:52 ip-172-31-5-199 acpid: waiting for events: event logging is off
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO [amazon-ssm-agent] OS: linux, Arch: amd64
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:51 INFO [CredentialRefresher] Identity does not require credential refresher
+Sep 21 15:30:52 ip-172-31-5-199 cloud-init: Cloud-init v. 19.3-45.amzn2 running 'modules:final' at Wed, 21 Sep 2022 15:30:52 +0000. Up 7.77 seconds.
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:52Z] Started EB User Data
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + SLEEP_TIME=10
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + SLEEP_TIME_MAX=3600
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + true
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + curl https://elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com/stalks/eb_nodejs16_amazon_linux_2_1.0.1652.0_20220826002136/lib/UserDataScript.sh
+Sep 21 15:30:52 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:52 INFO [amazon-ssm-agent] [LongRunningWorkerContainer] [WorkerProvider] Worker ssm-agent-worker is not running, starting worker process
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]:  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]:                                 Dload  Upload   Total   Spent    Left  Speed
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: #015  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0#015100  4627  100  4627    0     0  74518      0 --:--:-- --:--:-- --:--:-- 75852
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:52.941Z] Started EB Bootstrapping Script.
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + RESULT=0
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + [[ 0 -ne 0 ]]
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + SLEEP_TIME=2
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:52.960Z] Received parameters:
+Sep 21 15:30:52 ip-172-31-5-199 [eb-cfn-init]: + /bin/bash /tmp/ebbootstrap.sh 'https://cloudformation-waitcondition-ap-south-1.s3.ap-south-1.amazonaws.com/arn%3Aaws%3Acloudformation%3Aap-south-1%3A233051425530%3Astack/awseb-e-vbfsy5fimr-stack/33e92730-39c2-11ed-bb03-06bb2cb5975c/AWSEBInstanceLaunchWaitHandle?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220921T152943Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIARN2TU4VHIL33NBWC%2F20220921%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=b7d20b8df4728a3a79ef1bac077e6e51bcabc81fefaf3015aa14aa8cdac5e10e' arn:aws:cloudformation:ap-south-1:233051425530:stack/awseb-e-vbfsy5fimr-stack/33e92730-39c2-11ed-bb03-06bb2cb5975c 88c713cd-b057-4e4b-ab66-a1d3c16a8c79 https://elasticbeanstalk-health.ap-south-1.amazonaws.com '' https://elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com/stalks/eb_nodejs16_amazon_linux_2_1.0.1652.0_20220826002136 ap-south-1
+Sep 21 15:30:53 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:52 INFO [amazon-ssm-agent] [LongRunningWorkerContainer] [WorkerProvider] Worker ssm-agent-worker (pid:3075) started
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: TARBALLS =
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: EB_GEMS =
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: SIGNAL_URL = https://cloudformation-waitcondition-ap-south-1.s3.ap-south-1.amazonaws.com/arn%3Aaws%3Acloudformation%3Aap-south-1%3A233051425530%3Astack/awseb-e-vbfsy5fimr-stack/33e92730-39c2-11ed-bb03-06bb2cb5975c/AWSEBInstanceLaunchWaitHandle?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220921T152943Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIARN2TU4VHIL33NBWC%2F20220921%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=b7d20b8df4728a3a79ef1bac077e6e51bcabc81fefaf3015aa14aa8cdac5e10e
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: STACK_ID = arn:aws:cloudformation:ap-south-1:233051425530:stack/awseb-e-vbfsy5fimr-stack/33e92730-39c2-11ed-bb03-06bb2cb5975c
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: REGION = ap-south-1
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: GUID =
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: HEALTHD_GROUP_ID = 88c713cd-b057-4e4b-ab66-a1d3c16a8c79
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: HEALTHD_ENDPOINT = https://elasticbeanstalk-health.ap-south-1.amazonaws.com
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: PROXY_SERVER =
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: HEALTHD_PROXY_LOG_LOCATION =
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: PLATFORM_ASSETS_URL = https://elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com/stalks/eb_nodejs16_amazon_linux_2_1.0.1652.0_20220826002136
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.040Z] engine url is set to https://elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com/stalks/eb_nodejs16_amazon_linux_2_1.0.1652.0_20220826002136/lib/platform-engine.zip
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.070Z] first init of instance.
+Sep 21 15:30:53 ip-172-31-5-199 amazon-ssm-agent: 2022-09-21 15:30:52 INFO [amazon-ssm-agent] [LongRunningWorkerContainer] Monitor long running worker health every 60 seconds
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.083Z] Started executing cfn_init _OnInstanceBoot.
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.100Z] Running cfn-init ConfigSet: _OnInstanceBoot.
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.109Z] Using stack-id from userdata
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.849Z] Command Returned:
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.854Z] Completed executing cfn_init.
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:53.861Z] finished _OnInstanceBoot
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: --2022-09-21 15:30:53--  https://elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com/stalks/eb_nodejs16_amazon_linux_2_1.0.1652.0_20220826002136/lib/platform-engine.zip
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: Resolving elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com (elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com)... 52.219.158.170
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: Connecting to elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com (elasticbeanstalk-platform-assets-ap-south-1.s3.ap-south-1.amazonaws.com)|52.219.158.170|:443... connected.
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: HTTP request sent, awaiting response... 200 OK
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: Length: 26816590 (26M) [application/zip]
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: Saving to: ‘/tmp/platform-engine.zip’
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]:     0K .......... .......... .......... .......... ..........  0% 9.09M 3s
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]:    50K .......... .......... .......... .......... ..........  0% 8.81M 3s
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]:   100K .......... .......... .......... .......... ..........  0% 8.10M 3s
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]:   150K .......... .......... .......... .......... ..........  0%  105M 2s
+Sep 21 15:30:53 ip-172-31-5-199 [eb-cfn-init]:   200K .......... .......... .......... .......... ..........  0% 16.1M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   250K .......... .......... .......... .......... ..........  1% 6.95M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   300K .......... .......... .......... .......... ..........  1%  132M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   350K .......... .......... .......... .......... ..........  1% 6.85M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   400K .......... .......... .......... .......... ..........  1%  123M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   450K .......... .......... .......... .......... ..........  1% 6.93M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   500K .......... .......... .......... .......... ..........  2%  155M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   550K .......... .......... .......... .......... ..........  2% 7.39M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   600K .......... .......... .......... .......... ..........  2% 7.34M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   650K .......... .......... .......... .......... ..........  2%  209M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   700K .......... .......... .......... .......... ..........  2% 7.31M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   750K .......... .......... .......... .......... ..........  3%  218M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   800K .......... .......... .......... .......... ..........  3% 7.24M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   850K .......... .......... .......... .......... ..........  3% 7.28M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   900K .......... .......... .......... .......... ..........  3%  210M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:   950K .......... .......... .......... .......... ..........  3%  185M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1000K .......... .......... .......... .......... ..........  4% 61.8M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1050K .......... .......... .......... .......... ..........  4%  214M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1100K .......... .......... .......... .......... ..........  4% 6.83M 2s
+Sep 21 15:30:54 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 4340ms.
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1150K .......... .......... .......... .......... ..........  4% 7.46M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1200K .......... .......... .......... .......... ..........  4%  229M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1250K .......... .......... .......... .......... ..........  4% 7.59M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1300K .......... .......... .......... .......... ..........  5%  232M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1350K .......... .......... .......... .......... ..........  5% 7.36M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1400K .......... .......... .......... .......... ..........  5%  258M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1450K .......... .......... .......... .......... ..........  5%  179M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1500K .......... .......... .......... .......... ..........  5% 7.48M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1550K .......... .......... .......... .......... ..........  6%  127M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1600K .......... .......... .......... .......... ..........  6% 80.7M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1650K .......... .......... .......... .......... ..........  6%  176M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1700K .......... .......... .......... .......... ..........  6% 7.45M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1750K .......... .......... .......... .......... ..........  6%  217M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1800K .......... .......... .......... .......... ..........  7%  152M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1850K .......... .......... .......... .......... ..........  7%  277M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1900K .......... .......... .......... .......... ..........  7% 95.3M 2s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  1950K .......... .......... .......... .......... ..........  7%  110M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2000K .......... .......... .......... .......... ..........  7%  152M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2050K .......... .......... .......... .......... ..........  8% 7.36M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2100K .......... .......... .......... .......... ..........  8%  237M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2150K .......... .......... .......... .......... ..........  8%  130M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2200K .......... .......... .......... .......... ..........  8%  195M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2250K .......... .......... .......... .......... ..........  8% 86.2M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2300K .......... .......... .......... .......... ..........  8%  129M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2350K .......... .......... .......... .......... ..........  9%  151M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2400K .......... .......... .......... .......... ..........  9% 7.25M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2450K .......... .......... .......... .......... ..........  9%  214M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2500K .......... .......... .......... .......... ..........  9%  131M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2550K .......... .......... .......... .......... ..........  9%  235M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2600K .......... .......... .......... .......... .......... 10%  165M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2650K .......... .......... .......... .......... .......... 10% 77.5M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2700K .......... .......... .......... .......... .......... 10%  173M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2750K .......... .......... .......... .......... .......... 10%  241M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2800K .......... .......... .......... .......... .......... 10%  181M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2850K .......... .......... .......... .......... .......... 11%  135M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2900K .......... .......... .......... .......... .......... 11%  179M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  2950K .......... .......... .......... .......... .......... 11%  198M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3000K .......... .......... .......... .......... .......... 11%  222M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3050K .......... .......... .......... .......... .......... 11% 7.20M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3100K .......... .......... .......... .......... .......... 12%  123M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3150K .......... .......... .......... .......... .......... 12%  232M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3200K .......... .......... .......... .......... .......... 12%  177M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3250K .......... .......... .......... .......... .......... 12%  201M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3300K .......... .......... .......... .......... .......... 12%  169M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3350K .......... .......... .......... .......... .......... 12%  141M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3400K .......... .......... .......... .......... .......... 13%  173M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3450K .......... .......... .......... .......... .......... 13%  219M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3500K .......... .......... .......... .......... .......... 13%  188M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3550K .......... .......... .......... .......... .......... 13%  170M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3600K .......... .......... .......... .......... .......... 13%  158M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3650K .......... .......... .......... .......... .......... 14%  138M 1s
+Sep 21 15:30:54 ip-172-31-5-199 [eb-cfn-init]:  3700K .......... .......... .......... .......... .......... 14%  103M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  3750K .......... .......... .......... .......... .......... 14% 7.45M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  3800K .......... .......... .......... .......... .......... 14%  240M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  3850K .......... .......... .......... .......... .......... 14%  235M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  3900K .......... .......... .......... .......... .......... 15%  145M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  3950K .......... .......... .......... .......... .......... 15%  175M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4000K .......... .......... .......... .......... .......... 15%  122M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4050K .......... .......... .......... .......... .......... 15%  209M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4100K .......... .......... .......... .......... .......... 15%  152M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4150K .......... .......... .......... .......... .......... 16%  148M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4200K .......... .......... .......... .......... .......... 16%  138M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4250K .......... .......... .......... .......... .......... 16%  145M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4300K .......... .......... .......... .......... .......... 16%  161M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4350K .......... .......... .......... .......... .......... 16%  188M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4400K .......... .......... .......... .......... .......... 16%  217M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4450K .......... .......... .......... .......... .......... 17%  124M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4500K .......... .......... .......... .......... .......... 17%  161M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4550K .......... .......... .......... .......... .......... 17% 6.45M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4600K .......... .......... .......... .......... .......... 17% 91.2M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4650K .......... .......... .......... .......... .......... 17% 76.6M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4700K .......... .......... .......... .......... .......... 18% 50.4M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4750K .......... .......... .......... .......... .......... 18% 66.7M 1s
+Sep 21 15:30:55 ip-172-31-5-199 chronyd[2503]: Selected source 169.254.169.123
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4800K .......... .......... .......... .......... .......... 18% 50.6M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4850K .......... .......... .......... .......... .......... 18% 61.8M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4900K .......... .......... .......... .......... .......... 18% 54.8M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  4950K .......... .......... .......... .......... .......... 19% 35.5M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5000K .......... .......... .......... .......... .......... 19% 80.4M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5050K .......... .......... .......... .......... .......... 19% 59.7M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5100K .......... .......... .......... .......... .......... 19% 6.20M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5150K .......... .......... .......... .......... .......... 19% 97.4M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5200K .......... .......... .......... .......... .......... 20% 84.3M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5250K .......... .......... .......... .......... .......... 20% 29.6M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5300K .......... .......... .......... .......... .......... 20% 99.8M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5350K .......... .......... .......... .......... .......... 20% 85.8M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5400K .......... .......... .......... .......... .......... 20% 55.8M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5450K .......... .......... .......... .......... .......... 21% 54.3M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5500K .......... .......... .......... .......... .......... 21% 34.7M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5550K .......... .......... .......... .......... .......... 21% 96.0M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5600K .......... .......... .......... .......... .......... 21% 55.6M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5650K .......... .......... .......... .......... .......... 21% 41.1M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5700K .......... .......... .......... .......... .......... 21%  237M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5750K .......... .......... .......... .......... .......... 22%  254M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5800K .......... .......... .......... .......... .......... 22%  258M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5850K .......... .......... .......... .......... .......... 22%  213M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5900K .......... .......... .......... .......... .......... 22%  119M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  5950K .......... .......... .......... .......... .......... 22%  167M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6000K .......... .......... .......... .......... .......... 23%  125M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6050K .......... .......... .......... .......... .......... 23% 52.9M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6100K .......... .......... .......... .......... .......... 23% 5.96M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6150K .......... .......... .......... .......... .......... 23%  104M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6200K .......... .......... .......... .......... .......... 23%  101M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6250K .......... .......... .......... .......... .......... 24% 64.2M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6300K .......... .......... .......... .......... .......... 24% 38.4M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6350K .......... .......... .......... .......... .......... 24% 99.8M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6400K .......... .......... .......... .......... .......... 24% 62.7M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6450K .......... .......... .......... .......... .......... 24% 35.3M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6500K .......... .......... .......... .......... .......... 25%  112M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6550K .......... .......... .......... .......... .......... 25% 28.6M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6600K .......... .......... .......... .......... .......... 25% 7.28M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6650K .......... .......... .......... .......... .......... 25%  109M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6700K .......... .......... .......... .......... .......... 25% 97.2M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6750K .......... .......... .......... .......... .......... 25% 95.1M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6800K .......... .......... .......... .......... .......... 26% 67.3M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6850K .......... .......... .......... .......... .......... 26% 93.3M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6900K .......... .......... .......... .......... .......... 26% 90.0M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  6950K .......... .......... .......... .......... .......... 26%  108M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7000K .......... .......... .......... .......... .......... 26% 96.0M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7050K .......... .......... .......... .......... .......... 27%  106M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7100K .......... .......... .......... .......... .......... 27%  104M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7150K .......... .......... .......... .......... .......... 27%  100M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7200K .......... .......... .......... .......... .......... 27%  103M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7250K .......... .......... .......... .......... .......... 27%  101M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7300K .......... .......... .......... .......... .......... 28%  103M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7350K .......... .......... .......... .......... .......... 28%  111M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7400K .......... .......... .......... .......... .......... 28% 94.6M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7450K .......... .......... .......... .......... .......... 28%  104M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7500K .......... .......... .......... .......... .......... 28%  104M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7550K .......... .......... .......... .......... .......... 29% 59.6M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7600K .......... .......... .......... .......... .......... 29% 90.3M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7650K .......... .......... .......... .......... .......... 29% 6.51M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7700K .......... .......... .......... .......... .......... 29%  101M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7750K .......... .......... .......... .......... .......... 29%  106M 1s
+Sep 21 15:30:55 ip-172-31-5-199 [eb-cfn-init]:  7800K .......... .......... .......... .......... .......... 29%  120M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  7850K .......... .......... .......... .......... .......... 30%  104M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  7900K .......... .......... .......... .......... .......... 30%  103M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  7950K .......... .......... .......... .......... .......... 30%  105M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8000K .......... .......... .......... .......... .......... 30%  104M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8050K .......... .......... .......... .......... .......... 30% 98.3M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8100K .......... .......... .......... .......... .......... 31% 93.0M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8150K .......... .......... .......... .......... .......... 31%  101M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8200K .......... .......... .......... .......... .......... 31% 79.9M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8250K .......... .......... .......... .......... .......... 31% 24.2M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8300K .......... .......... .......... .......... .......... 31% 91.4M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8350K .......... .......... .......... .......... .......... 32% 74.6M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8400K .......... .......... .......... .......... .......... 32%  103M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8450K .......... .......... .......... .......... .......... 32% 54.8M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8500K .......... .......... .......... .......... .......... 32% 66.0M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8550K .......... .......... .......... .......... .......... 32% 4.91M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8600K .......... .......... .......... .......... .......... 33%  110M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8650K .......... .......... .......... .......... .......... 33% 75.5M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8700K .......... .......... .......... .......... .......... 33%  107M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8750K .......... .......... .......... .......... .......... 33% 37.2M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8800K .......... .......... .......... .......... .......... 33% 87.2M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8850K .......... .......... .......... .......... .......... 33% 63.9M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8900K .......... .......... .......... .......... .......... 34% 92.9M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  8950K .......... .......... .......... .......... .......... 34% 43.5M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9000K .......... .......... .......... .......... .......... 34% 81.7M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9050K .......... .......... .......... .......... .......... 34% 80.2M 1s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9100K .......... .......... .......... .......... .......... 34% 39.2M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9150K .......... .......... .......... .......... .......... 35%  101M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9200K .......... .......... .......... .......... .......... 35% 84.0M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9250K .......... .......... .......... .......... .......... 35%  104M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9300K .......... .......... .......... .......... .......... 35% 76.7M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9350K .......... .......... .......... .......... .......... 35%  102M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9400K .......... .......... .......... .......... .......... 36% 75.0M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9450K .......... .......... .......... .......... .......... 36%  108M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9500K .......... .......... .......... .......... .......... 36%  105M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9550K .......... .......... .......... .......... .......... 36%  104M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9600K .......... .......... .......... .......... .......... 36%  103M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9650K .......... .......... .......... .......... .......... 37%  101M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9700K .......... .......... .......... .......... .......... 37%  100M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9750K .......... .......... .......... .......... .......... 37% 5.30M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9800K .......... .......... .......... .......... .......... 37% 99.3M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9850K .......... .......... .......... .......... .......... 37% 98.4M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9900K .......... .......... .......... .......... .......... 37%  116M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]:  9950K .......... .......... .......... .......... .......... 38% 27.9M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10000K .......... .......... .......... .......... .......... 38% 96.4M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10050K .......... .......... .......... .......... .......... 38% 71.4M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10100K .......... .......... .......... .......... .......... 38% 98.7M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10150K .......... .......... .......... .......... .......... 38% 73.0M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10200K .......... .......... .......... .......... .......... 39% 39.1M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10250K .......... .......... .......... .......... .......... 39% 91.3M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10300K .......... .......... .......... .......... .......... 39% 82.0M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10350K .......... .......... .......... .......... .......... 39%  117M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10400K .......... .......... .......... .......... .......... 39% 37.3M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10450K .......... .......... .......... .......... .......... 40%  105M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10500K .......... .......... .......... .......... .......... 40% 73.3M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10550K .......... .......... .......... .......... .......... 40% 91.5M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10600K .......... .......... .......... .......... .......... 40% 70.9M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10650K .......... .......... .......... .......... .......... 40%  103M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10700K .......... .......... .......... .......... .......... 41%  105M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10750K .......... .......... .......... .......... .......... 41%  121M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10800K .......... .......... .......... .......... .......... 41%  104M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10850K .......... .......... .......... .......... .......... 41%  105M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10900K .......... .......... .......... .......... .......... 41%  106M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 10950K .......... .......... .......... .......... .......... 42%  105M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11000K .......... .......... .......... .......... .......... 42%  101M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11050K .......... .......... .......... .......... .......... 42% 5.00M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11100K .......... .......... .......... .......... .......... 42%  101M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11150K .......... .......... .......... .......... .......... 42%  103M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11200K .......... .......... .......... .......... .......... 42%  117M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11250K .......... .......... .......... .......... .......... 43% 66.1M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11300K .......... .......... .......... .......... .......... 43% 70.0M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11350K .......... .......... .......... .......... .......... 43% 94.2M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11400K .......... .......... .......... .......... .......... 43% 72.4M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11450K .......... .......... .......... .......... .......... 43%  103M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11500K .......... .......... .......... .......... .......... 44%  104M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11550K .......... .......... .......... .......... .......... 44%  103M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11600K .......... .......... .......... .......... .......... 44%  118M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11650K .......... .......... .......... .......... .......... 44% 97.9M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11700K .......... .......... .......... .......... .......... 44%  104M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11750K .......... .......... .......... .......... .......... 45%  105M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11800K .......... .......... .......... .......... .......... 45%  105M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11850K .......... .......... .......... .......... .......... 45% 99.9M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11900K .......... .......... .......... .......... .......... 45%  102M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 11950K .......... .......... .......... .......... .......... 45% 99.1M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12000K .......... .......... .......... .......... .......... 46% 71.2M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12050K .......... .......... .......... .......... .......... 46%  101M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12100K .......... .......... .......... .......... .......... 46% 89.5M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12150K .......... .......... .......... .......... .......... 46%  116M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12200K .......... .......... .......... .......... .......... 46%  117M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12250K .......... .......... .......... .......... .......... 46%  113M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12300K .......... .......... .......... .......... .......... 47%  100M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12350K .......... .......... .......... .......... .......... 47%  112M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12400K .......... .......... .......... .......... .......... 47%  114M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12450K .......... .......... .......... .......... .......... 47%  117M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12500K .......... .......... .......... .......... .......... 47% 98.6M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12550K .......... .......... .......... .......... .......... 48%  114M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12600K .......... .......... .......... .......... .......... 48%  111M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 12650K .......... .......... .......... .......... .......... 48%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 12700K .......... .......... .......... .......... .......... 48% 80.0M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 12750K .......... .......... .......... .......... .......... 48% 4.94M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 12800K .......... .......... .......... .......... .......... 49% 57.9M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 12850K .......... .......... .......... .......... .......... 49% 60.4M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 12900K .......... .......... .......... .......... .......... 49% 22.6M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 12950K .......... .......... .......... .......... .......... 49%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13000K .......... .......... .......... .......... .......... 49% 88.1M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13050K .......... .......... .......... .......... .......... 50%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13100K .......... .......... .......... .......... .......... 50% 74.0M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13150K .......... .......... .......... .......... .......... 50%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13200K .......... .......... .......... .......... .......... 50% 75.2M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13250K .......... .......... .......... .......... .......... 50%  114M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13300K .......... .......... .......... .......... .......... 50% 22.5M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13350K .......... .......... .......... .......... .......... 51%  107M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13400K .......... .......... .......... .......... .......... 51%  114M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13450K .......... .......... .......... .......... .......... 51% 67.0M 0s
+Sep 21 15:30:56 ip-172-31-5-199 chronyd[2503]: System clock was stepped by -0.219194 seconds
+Sep 21 15:30:56 ip-172-31-5-199 systemd: Time has been changed
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 13500K .......... .......... .......... .......... .......... 51% 33.4M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 13550K .......... .......... .......... .......... .......... 51% 5.35M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 13600K .......... .......... .......... .......... .......... 52%  116M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 13650K .......... .......... .......... .......... .......... 52% 76.4M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 13700K .......... .......... .......... .......... .......... 52% 80.5M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 13750K .......... .......... .......... .......... .......... 52% 32.7M 0s
+Sep 21 15:30:56 ip-172-31-5-199 [eb-cfn-init]: 13800K .......... .......... .......... .......... .......... 52% 89.3M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13850K .......... .......... .......... .......... .......... 53% 38.7M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13900K .......... .......... .......... .......... .......... 53% 95.3M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 13950K .......... .......... .......... .......... .......... 53% 85.2M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14000K .......... .......... .......... .......... .......... 53% 39.6M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14050K .......... .......... .......... .......... .......... 53%  111M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14100K .......... .......... .......... .......... .......... 54% 89.9M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14150K .......... .......... .......... .......... .......... 54% 84.4M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14200K .......... .......... .......... .......... .......... 54%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14250K .......... .......... .......... .......... .......... 54%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14300K .......... .......... .......... .......... .......... 54% 96.0M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14350K .......... .......... .......... .......... .......... 54%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14400K .......... .......... .......... .......... .......... 55%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14450K .......... .......... .......... .......... .......... 55%  108M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14500K .......... .......... .......... .......... .......... 55%  104M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14550K .......... .......... .......... .......... .......... 55% 72.6M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14600K .......... .......... .......... .......... .......... 55% 93.9M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14650K .......... .......... .......... .......... .......... 56% 95.5M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14700K .......... .......... .......... .......... .......... 56% 5.04M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14750K .......... .......... .......... .......... .......... 56% 35.7M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14800K .......... .......... .......... .......... .......... 56%  114M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14850K .......... .......... .......... .......... .......... 56%  105M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14900K .......... .......... .......... .......... .......... 57% 77.3M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 14950K .......... .......... .......... .......... .......... 57% 86.8M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15000K .......... .......... .......... .......... .......... 57%  102M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15050K .......... .......... .......... .......... .......... 57%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15100K .......... .......... .......... .......... .......... 57%  100M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15150K .......... .......... .......... .......... .......... 58%  118M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15200K .......... .......... .......... .......... .......... 58%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15250K .......... .......... .......... .......... .......... 58%  113M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15300K .......... .......... .......... .......... .......... 58% 96.6M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15350K .......... .......... .......... .......... .......... 58% 68.5M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15400K .......... .......... .......... .......... .......... 58%  105M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15450K .......... .......... .......... .......... .......... 59%  118M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15500K .......... .......... .......... .......... .......... 59% 99.6M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15550K .......... .......... .......... .......... .......... 59%  118M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15600K .......... .......... .......... .......... .......... 59%  118M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15650K .......... .......... .......... .......... .......... 59%  118M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15700K .......... .......... .......... .......... .......... 60%  102M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15750K .......... .......... .......... .......... .......... 60%  106M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15800K .......... .......... .......... .......... .......... 60%  114M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15850K .......... .......... .......... .......... .......... 60% 92.9M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15900K .......... .......... .......... .......... .......... 60% 68.9M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 15950K .......... .......... .......... .......... .......... 61% 99.2M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16000K .......... .......... .......... .......... .......... 61% 5.79M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16050K .......... .......... .......... .......... .......... 61%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16100K .......... .......... .......... .......... .......... 61%  102M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16150K .......... .......... .......... .......... .......... 61%  109M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16200K .......... .......... .......... .......... .......... 62%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16250K .......... .......... .......... .......... .......... 62%  113M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16300K .......... .......... .......... .......... .......... 62%  100M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16350K .......... .......... .......... .......... .......... 62%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16400K .......... .......... .......... .......... .......... 62%  107M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16450K .......... .......... .......... .......... .......... 63%  114M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16500K .......... .......... .......... .......... .......... 63% 59.2M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16550K .......... .......... .......... .......... .......... 63% 91.1M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16600K .......... .......... .......... .......... .......... 63%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16650K .......... .......... .......... .......... .......... 63% 99.1M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16700K .......... .......... .......... .......... .......... 63%  101M 0s
+Sep 21 15:30:57 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16750K .......... .......... .......... .......... .......... 64%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16800K .......... .......... .......... .......... .......... 64%  118M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16850K .......... .......... .......... .......... .......... 64%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16900K .......... .......... .......... .......... .......... 64%  103M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 16950K .......... .......... .......... .......... .......... 64%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17000K .......... .......... .......... .......... .......... 65%  111M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17050K .......... .......... .......... .......... .......... 65%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17100K .......... .......... .......... .......... .......... 65% 87.4M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17150K .......... .......... .......... .......... .......... 65%  116M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17200K .......... .......... .......... .......... .......... 65% 55.6M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17250K .......... .......... .......... .......... .......... 66% 97.9M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17300K .......... .......... .......... .......... .......... 66%  101M 0s
+Sep 21 15:30:57 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17350K .......... .......... .......... .......... .......... 66%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17400K .......... .......... .......... .......... .......... 66%  110M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17450K .......... .......... .......... .......... .......... 66%  109M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17500K .......... .......... .......... .......... .......... 67% 5.90M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17550K .......... .......... .......... .......... .......... 67%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17600K .......... .......... .......... .......... .......... 67%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17650K .......... .......... .......... .......... .......... 67%  112M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17700K .......... .......... .......... .......... .......... 67%  104M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17750K .......... .......... .......... .......... .......... 67%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17800K .......... .......... .......... .......... .......... 68%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17850K .......... .......... .......... .......... .......... 68%  103M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17900K .......... .......... .......... .......... .......... 68% 81.8M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 17950K .......... .......... .......... .......... .......... 68% 70.3M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18000K .......... .......... .......... .......... .......... 68%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18050K .......... .......... .......... .......... .......... 69% 93.0M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18100K .......... .......... .......... .......... .......... 69%  100M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18150K .......... .......... .......... .......... .......... 69%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18200K .......... .......... .......... .......... .......... 69%  115M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18250K .......... .......... .......... .......... .......... 69%  109M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18300K .......... .......... .......... .......... .......... 70%  101M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18350K .......... .......... .......... .......... .......... 70%  113M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18400K .......... .......... .......... .......... .......... 70%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18450K .......... .......... .......... .......... .......... 70%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18500K .......... .......... .......... .......... .......... 70%  101M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18550K .......... .......... .......... .......... .......... 71%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18600K .......... .......... .......... .......... .......... 71%  110M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18650K .......... .......... .......... .......... .......... 71%  114M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18700K .......... .......... .......... .......... .......... 71% 55.2M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18750K .......... .......... .......... .......... .......... 71% 30.3M 0s
+Sep 21 15:30:57 ip-172-31-5-199 systemd: Starting This is cfn-hup daemon...
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18800K .......... .......... .......... .......... .......... 71%  117M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18850K .......... .......... .......... .......... .......... 72% 90.4M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18900K .......... .......... .......... .......... .......... 72%  102M 0s
+Sep 21 15:30:57 ip-172-31-5-199 systemd: Started This is cfn-hup daemon.
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 18950K .......... .......... .......... .......... .......... 72% 5.03M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 19000K .......... .......... .......... .......... .......... 72%  112M 0s
+Sep 21 15:30:57 ip-172-31-5-199 [eb-cfn-init]: 19050K .......... .......... .......... .......... .......... 72% 67.7M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19100K .......... .......... .......... .......... .......... 73% 68.2M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19150K .......... .......... .......... .......... .......... 73% 56.7M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19200K .......... .......... .......... .......... .......... 73%  100M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19250K .......... .......... .......... .......... .......... 73% 74.5M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19300K .......... .......... .......... .......... .......... 73% 29.8M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19350K .......... .......... .......... .......... .......... 74% 76.0M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19400K .......... .......... .......... .......... .......... 74% 84.1M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19450K .......... .......... .......... .......... .......... 74%  103M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19500K .......... .......... .......... .......... .......... 74% 59.2M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19550K .......... .......... .......... .......... .......... 74%  103M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19600K .......... .......... .......... .......... .......... 75% 69.8M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19650K .......... .......... .......... .......... .......... 75% 93.8M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19700K .......... .......... .......... .......... .......... 75% 62.1M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19750K .......... .......... .......... .......... .......... 75%  100M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19800K .......... .......... .......... .......... .......... 75% 36.9M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19850K .......... .......... .......... .......... .......... 75%  115M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19900K .......... .......... .......... .......... .......... 76% 60.6M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 19950K .......... .......... .......... .......... .......... 76%  108M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20000K .......... .......... .......... .......... .......... 76% 77.0M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20050K .......... .......... .......... .......... .......... 76% 5.53M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20100K .......... .......... .......... .......... .......... 76%  102M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20150K .......... .......... .......... .......... .......... 77% 30.7M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20200K .......... .......... .......... .......... .......... 77%  115M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20250K .......... .......... .......... .......... .......... 77%  104M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20300K .......... .......... .......... .......... .......... 77% 57.4M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20350K .......... .......... .......... .......... .......... 77% 72.0M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20400K .......... .......... .......... .......... .......... 78% 87.9M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20450K .......... .......... .......... .......... .......... 78% 34.4M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20500K .......... .......... .......... .......... .......... 78%  254M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20550K .......... .......... .......... .......... .......... 78%  312M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20600K .......... .......... .......... .......... .......... 78%  311M 0s
+Sep 21 15:30:58 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 8300ms.
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20650K .......... .......... .......... .......... .......... 79%  313M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20700K .......... .......... .......... .......... .......... 79% 72.6M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20750K .......... .......... .......... .......... .......... 79%  108M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20800K .......... .......... .......... .......... .......... 79% 81.8M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20850K .......... .......... .......... .......... .......... 79% 75.8M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20900K .......... .......... .......... .......... .......... 79% 39.3M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 20950K .......... .......... .......... .......... .......... 80%  118M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21000K .......... .......... .......... .......... .......... 80% 61.0M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21050K .......... .......... .......... .......... .......... 80%  104M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21100K .......... .......... .......... .......... .......... 80% 36.6M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21150K .......... .......... .......... .......... .......... 80%  113M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21200K .......... .......... .......... .......... .......... 81% 62.7M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21250K .......... .......... .......... .......... .......... 81% 5.32M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21300K .......... .......... .......... .......... .......... 81%  101M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21350K .......... .......... .......... .......... .......... 81% 32.4M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21400K .......... .......... .......... .......... .......... 81%  115M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21450K .......... .......... .......... .......... .......... 82%  104M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21500K .......... .......... .......... .......... .......... 82% 94.7M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21550K .......... .......... .......... .......... .......... 82%  114M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21600K .......... .......... .......... .......... .......... 82%  116M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21650K .......... .......... .......... .......... .......... 82%  116M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21700K .......... .......... .......... .......... .......... 83%  103M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21750K .......... .......... .......... .......... .......... 83%  117M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21800K .......... .......... .......... .......... .......... 83%  118M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21850K .......... .......... .......... .......... .......... 83%  118M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: + RESULT=0
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: + [[ 0 -ne 0 ]]
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21900K .......... .......... .......... .......... .......... 83% 98.7M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: + exit 0
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 21950K .......... .......... .......... .......... .......... 84%  104M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 22000K .......... .......... .......... .......... .......... 84%  115M 0s
+Sep 21 15:30:58 ip-172-31-5-199 [eb-cfn-init]: 22050K .......... .......... .......... .......... .......... 84%  113M 0s
+Sep 21 15:30:59 ip-172-31-5-199 systemd: Started Execute cloud user/final scripts.
+Sep 21 15:30:59 ip-172-31-5-199 systemd: Reached target Cloud-init target.
+Sep 21 15:30:59 ip-172-31-5-199 systemd: Startup finished in 1.566s (kernel) + 1.247s (initrd) + 11.438s (userspace) = 14.252s.
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22100K .......... .......... .......... .......... .......... 84%  103M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22150K .......... .......... .......... .......... .......... 84%  116M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22200K .......... .......... .......... .......... .......... 84%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22250K .......... .......... .......... .......... .......... 85%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22300K .......... .......... .......... .......... .......... 85% 99.1M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22350K .......... .......... .......... .......... .......... 85%  112M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22400K .......... .......... .......... .......... .......... 85%  111M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22450K .......... .......... .......... .......... .......... 85%  112M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22500K .......... .......... .......... .......... .......... 86%  101M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22550K .......... .......... .......... .......... .......... 86%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22600K .......... .......... .......... .......... .......... 86%  113M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22650K .......... .......... .......... .......... .......... 86% 6.75M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22700K .......... .......... .......... .......... .......... 86% 99.7M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22750K .......... .......... .......... .......... .......... 87%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22800K .......... .......... .......... .......... .......... 87%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22850K .......... .......... .......... .......... .......... 87%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22900K .......... .......... .......... .......... .......... 87%  103M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 22950K .......... .......... .......... .......... .......... 87%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23000K .......... .......... .......... .......... .......... 88%  107M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23050K .......... .......... .......... .......... .......... 88%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23100K .......... .......... .......... .......... .......... 88% 97.9M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23150K .......... .......... .......... .......... .......... 88%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23200K .......... .......... .......... .......... .......... 88%  111M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23250K .......... .......... .......... .......... .......... 88%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23300K .......... .......... .......... .......... .......... 89%  104M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23350K .......... .......... .......... .......... .......... 89%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23400K .......... .......... .......... .......... .......... 89%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23450K .......... .......... .......... .......... .......... 89%  109M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23500K .......... .......... .......... .......... .......... 89% 98.7M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23550K .......... .......... .......... .......... .......... 90%  109M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23600K .......... .......... .......... .......... .......... 90%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23650K .......... .......... .......... .......... .......... 90%  112M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23700K .......... .......... .......... .......... .......... 90%  102M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23750K .......... .......... .......... .......... .......... 90%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23800K .......... .......... .......... .......... .......... 91%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23850K .......... .......... .......... .......... .......... 91%  111M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23900K .......... .......... .......... .......... .......... 91% 91.2M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 23950K .......... .......... .......... .......... .......... 91%  107M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24000K .......... .......... .......... .......... .......... 91% 7.81M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24050K .......... .......... .......... .......... .......... 92%  113M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24100K .......... .......... .......... .......... .......... 92% 97.0M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24150K .......... .......... .......... .......... .......... 92%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24200K .......... .......... .......... .......... .......... 92%  113M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24250K .......... .......... .......... .......... .......... 92%  116M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24300K .......... .......... .......... .......... .......... 92%  100M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24350K .......... .......... .......... .......... .......... 93%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24400K .......... .......... .......... .......... .......... 93%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24450K .......... .......... .......... .......... .......... 93%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24500K .......... .......... .......... .......... .......... 93% 99.4M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24550K .......... .......... .......... .......... .......... 93%  111M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24600K .......... .......... .......... .......... .......... 94%  113M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24650K .......... .......... .......... .......... .......... 94%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24700K .......... .......... .......... .......... .......... 94% 96.1M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24750K .......... .......... .......... .......... .......... 94%  116M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24800K .......... .......... .......... .......... .......... 94%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24850K .......... .......... .......... .......... .......... 95%  116M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24900K .......... .......... .......... .......... .......... 95%  101M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 24950K .......... .......... .......... .......... .......... 95%  113M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25000K .......... .......... .......... .......... .......... 95%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25050K .......... .......... .......... .......... .......... 95%  109M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25100K .......... .......... .......... .......... .......... 96% 98.9M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25150K .......... .......... .......... .......... .......... 96%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25200K .......... .......... .......... .......... .......... 96% 7.45M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25250K .......... .......... .......... .......... .......... 96%  105M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25300K .......... .......... .......... .......... .......... 96%  100M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25350K .......... .......... .......... .......... .......... 96%  116M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25400K .......... .......... .......... .......... .......... 97%  117M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25450K .......... .......... .......... .......... .......... 97%  113M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25500K .......... .......... .......... .......... .......... 97% 96.4M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25550K .......... .......... .......... .......... .......... 97%  116M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25600K .......... .......... .......... .......... .......... 97%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25650K .......... .......... .......... .......... .......... 98%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25700K .......... .......... .......... .......... .......... 98% 96.5M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25750K .......... .......... .......... .......... .......... 98%  114M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25800K .......... .......... .......... .......... .......... 98%  112M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25850K .......... .......... .......... .......... .......... 98%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25900K .......... .......... .......... .......... .......... 99% 94.8M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 25950K .......... .......... .......... .......... .......... 99%  110M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 26000K .......... .......... .......... .......... .......... 99%  115M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 26050K .......... .......... .......... .......... .......... 99%  112M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 26100K .......... .......... .......... .......... .......... 99% 91.6M 0s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 26150K .......... .......... .......... ........             100%  116M=0.6s
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:54 (45.7 MB/s) - ‘/tmp/platform-engine.zip’ saved [26816590/26816590]
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: Archive:  /tmp/platform-engine.zip
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/bin/platform-engine
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/bin/publishlogs
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/bin/get-config
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/bin/pkg-repo
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/aws-eb-command-handler.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/aws-eb.target
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/beanstalk-magic
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/cfn-hup-wrapper
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/cfn-hup.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/containercommandsupport/container-defaults.sh
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/containercommandsupport/leader-test.sh
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/eb-banner
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/guidlocking/repo.py
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/healthd/config.yaml.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/healthd/healthd_httpd.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/healthd/healthd_logformat.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/healthd/healthd_nginx.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/healthd/healthddependency
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/healthd/logcleanup-cron.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/httpd/applicationport.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/httpd/gzip.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/httpd/httpd.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/httpd/staticfilesmapping.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/logrotate/logrotate-cron.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/logrotate/logrotate.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/logtasks/cron/publishlogs
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/nginx/applicationport.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/nginx/nginx.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/nginx/staticfilesmapping.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: extracting: /opt/elasticbeanstalk/config/private/restartcfn.sh
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/restartcloudwatchagent.sh
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/rsyslog.conf.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/ruby_common_env
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/sqsd/default.yaml.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/sqsd/sqsdversion.json
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/systemd-append.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/config/private/systemd.template
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/tasks/bundlelogs.d/cfn-system.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: extracting: /opt/elasticbeanstalk/tasks/bundlelogs.d/cloud-init-system.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/tasks/bundlelogs.d/eb-app.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: extracting: /opt/elasticbeanstalk/tasks/bundlelogs.d/eb-hooks.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/tasks/bundlelogs.d/eb-system.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: extracting: /opt/elasticbeanstalk/tasks/bundlelogs.d/rotate.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/tasks/bundlelogs.d/system.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: extracting: /opt/elasticbeanstalk/tasks/publishlogs.d/eb-app.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/tasks/taillogs.d/eb-app.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]:  inflating: /opt/elasticbeanstalk/tasks/taillogs.d/eb-engine.conf
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:57.958Z] Successfully bootstrapped instance.
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:57.985Z] Sending signal 0 to CFN wait condition https://cloudformation-waitcondition-ap-south-1.s3.ap-south-1.amazonaws.com/arn%3Aaws%3Acloudformation%3Aap-south-1%3A233051425530%3Astack/awseb-e-vbfsy5fimr-stack/33e92730-39c2-11ed-bb03-06bb2cb5975c/AWSEBInstanceLaunchWaitHandle?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220921T152943Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIARN2TU4VHIL33NBWC%2F20220921%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=b7d20b8df4728a3a79ef1bac077e6e51bcabc81fefaf3015aa14aa8cdac5e10e
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: CloudFormation signaled successfully with %s.
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:58.815Z] Tailing /var/log/eb-commandprocessor.log
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* eb-commandprocessor taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ***eb-commandprocessor is not available yet.***
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* End of taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:58.833Z] Tailing /var/log/eb-activity.log
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* eb-activity taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ***eb-activity is not available yet.***
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* End of taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:58.849Z] Tailing /var/log/eb-tools.log
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* eb-tools taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ***eb-tools is not available yet.***
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* End of taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:58.870Z] Tailing /var/log/eb-version-deployment.log
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* eb-version-deployment taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ***eb-version-deployment is not available yet.***
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* End of taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:58.883Z] Tailing /var/log/cfn-init.log
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* cfn-init taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,659 [INFO] -----------------------Starting build-----------------------
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,665 [INFO] Running configSets: _OnInstanceBoot
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,668 [INFO] Running configSet _OnInstanceBoot
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,671 [INFO] Running config AWSEBBaseConfig
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,816 [INFO] Command clearbackupfiles succeeded
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,820 [INFO] Running config AWSEBCfnHupEndpointOverride
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,823 [INFO] Command clearbackupfiles succeeded
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,825 [INFO] ConfigSets completed
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:53,825 [INFO] -----------------------Build complete-----------------------
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* End of taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:58.901Z] Tailing /var/log/cfn-hup.log
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* cfn-hup taillog *******************
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:58,557 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.ap-south-1.amazonaws.com
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:58,558 [DEBUG] SQS client initialized with endpoint https://sqs.ap-south-1.amazonaws.com
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:58,558 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.ap-south-1.amazonaws.com
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:58,558 [DEBUG] Enabled single threading mode.
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:58,558 [DEBUG] Creating /var/lib/cfn-hup/data
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: 2022-09-21 15:30:58,574 [INFO] No umask value specified in config file. Using the default one: 0o22
+Sep 21 15:30:59 ip-172-31-5-199 [eb-cfn-init]: ******************* End of taillog *******************
+Sep 21 15:31:00 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:31:00 ip-172-31-5-199 [eb-cfn-init]: 
+Sep 21 15:31:00 ip-172-31-5-199 [eb-cfn-init]: [2022-09-21T15:30:58.923Z] Completed EB Bootstrapping Script.
+Sep 21 15:31:06 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 16160ms.
+Sep 21 15:31:23 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 31140ms.
+Sep 21 15:31:46 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:31:47 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:31:47 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:31:47 ip-172-31-5-199 systemd: Starting This is healthd daemon...
+Sep 21 15:31:47 ip-172-31-5-199 systemd: Started This is healthd daemon.
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Stopping System Logging Service...
+Sep 21 15:31:48 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="2983" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Stopped System Logging Service.
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Starting System Logging Service...
+Sep 21 15:31:48 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="3428" x-info="http://www.rsyslog.com"] start
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Started System Logging Service.
+Sep 21 15:31:48 ip-172-31-5-199 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/2.6.0/gems/puma-5.3.2/lib/puma/launcher.rb:80: warning: conflicting chdir during another chdir block
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Reached target eb-app.target.
+Sep 21 15:31:48 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:31:49 ip-172-31-5-199 systemd: Starting This is web daemon...
+Sep 21 15:31:49 ip-172-31-5-199 systemd: Started This is web daemon.
+Sep 21 15:31:49 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:31:49 ip-172-31-5-199 systemd: Starting The nginx HTTP and reverse proxy server...
+Sep 21 15:31:49 ip-172-31-5-199 nginx: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+Sep 21 15:31:49 ip-172-31-5-199 nginx: nginx: configuration file /etc/nginx/nginx.conf test is successful
+Sep 21 15:31:49 ip-172-31-5-199 systemd: Started The nginx HTTP and reverse proxy server.
+Sep 21 15:31:49 ip-172-31-5-199 web: > mean-course@0.0.0 start
+Sep 21 15:31:49 ip-172-31-5-199 web: > node server.js
+Sep 21 15:31:52 ip-172-31-5-199 web: Connection failed: MongoServerError: bad auth : Authentication failed.
+Sep 21 15:31:54 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 62920ms.
+Sep 21 15:31:58 ip-172-31-5-199 healthd: Version 2 of the Ruby SDK will enter maintenance mode as of November 20, 2020. To continue receiving service updates and new features, please upgrade to Version 3. More information can be found here: https://aws.amazon.com/blogs/developer/deprecation-schedule-for-aws-sdk-for-ruby-v2/
+Sep 21 15:32:57 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 122860ms.
+Sep 21 15:35:00 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 116510ms.
+Sep 21 15:36:53 ip-172-31-5-199 systemd: Stopping This is healthd daemon...
+Sep 21 15:36:53 ip-172-31-5-199 systemd: Stopped This is healthd daemon.
+Sep 21 15:36:53 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:53 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:53 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:54 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:54 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:54 ip-172-31-5-199 systemd: Starting This is healthd daemon...
+Sep 21 15:36:54 ip-172-31-5-199 systemd: Started This is healthd daemon.
+Sep 21 15:36:54 ip-172-31-5-199 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/2.6.0/gems/puma-5.3.2/lib/puma/launcher.rb:80: warning: conflicting chdir during another chdir block
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Stopping System Logging Service...
+Sep 21 15:36:55 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="3428" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Stopped System Logging Service.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Starting System Logging Service...
+Sep 21 15:36:55 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="3848" x-info="http://www.rsyslog.com"] start
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Started System Logging Service.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Stopping The nginx HTTP and reverse proxy server...
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Stopped The nginx HTTP and reverse proxy server.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Stopped target eb-app.target.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Stopping This is web daemon...
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Stopped This is web daemon.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:55 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Reached target eb-app.target.
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Starting This is web daemon...
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Started This is web daemon.
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:36:56 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 122230ms.
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Starting The nginx HTTP and reverse proxy server...
+Sep 21 15:36:56 ip-172-31-5-199 nginx: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+Sep 21 15:36:56 ip-172-31-5-199 nginx: nginx: configuration file /etc/nginx/nginx.conf test is successful
+Sep 21 15:36:56 ip-172-31-5-199 systemd: Started The nginx HTTP and reverse proxy server.
+Sep 21 15:36:57 ip-172-31-5-199 web: > mean-course@0.0.0 start
+Sep 21 15:36:57 ip-172-31-5-199 web: > node server.js
+Sep 21 15:36:59 ip-172-31-5-199 web: Connection failed: MongoServerError: bad auth : Authentication failed.
+Sep 21 15:37:04 ip-172-31-5-199 healthd: Version 2 of the Ruby SDK will enter maintenance mode as of November 20, 2020. To continue receiving service updates and new features, please upgrade to Version 3. More information can be found here: https://aws.amazon.com/blogs/developer/deprecation-schedule-for-aws-sdk-for-ruby-v2/
+Sep 21 15:38:58 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 112800ms.
+Sep 21 15:40:01 ip-172-31-5-199 systemd: Created slice User Slice of root.
+Sep 21 15:40:01 ip-172-31-5-199 systemd: Started Session 1 of user root.
+Sep 21 15:40:01 ip-172-31-5-199 systemd: Removed slice User Slice of root.
+Sep 21 15:40:51 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 112070ms.
+Sep 21 15:41:22 ip-172-31-5-199 systemd: Stopping This is healthd daemon...
+Sep 21 15:41:22 ip-172-31-5-199 systemd: Stopped This is healthd daemon.
+Sep 21 15:41:22 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:22 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:23 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:23 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:23 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:23 ip-172-31-5-199 systemd: Starting This is healthd daemon...
+Sep 21 15:41:23 ip-172-31-5-199 systemd: Started This is healthd daemon.
+Sep 21 15:41:24 ip-172-31-5-199 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/2.6.0/gems/puma-5.3.2/lib/puma/launcher.rb:80: warning: conflicting chdir during another chdir block
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Stopping System Logging Service...
+Sep 21 15:41:24 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="3848" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Stopped System Logging Service.
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Starting System Logging Service...
+Sep 21 15:41:24 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="4337" x-info="http://www.rsyslog.com"] start
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Started System Logging Service.
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Stopping The nginx HTTP and reverse proxy server...
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Stopped The nginx HTTP and reverse proxy server.
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Stopped target eb-app.target.
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Stopping This is web daemon...
+Sep 21 15:41:24 ip-172-31-5-199 systemd: Stopped This is web daemon.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Reached target eb-app.target.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Starting This is web daemon...
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Started This is web daemon.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Starting The nginx HTTP and reverse proxy server...
+Sep 21 15:41:25 ip-172-31-5-199 nginx: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+Sep 21 15:41:25 ip-172-31-5-199 nginx: nginx: configuration file /etc/nginx/nginx.conf test is successful
+Sep 21 15:41:25 ip-172-31-5-199 systemd: Started The nginx HTTP and reverse proxy server.
+Sep 21 15:41:26 ip-172-31-5-199 web: > mean-course@0.0.0 start
+Sep 21 15:41:26 ip-172-31-5-199 web: > node server.js
+Sep 21 15:41:28 ip-172-31-5-199 web: Connection failed: MongoServerError: bad auth : Authentication failed.
+Sep 21 15:41:34 ip-172-31-5-199 healthd: Version 2 of the Ruby SDK will enter maintenance mode as of November 20, 2020. To continue receiving service updates and new features, please upgrade to Version 3. More information can be found here: https://aws.amazon.com/blogs/developer/deprecation-schedule-for-aws-sdk-for-ruby-v2/
+Sep 21 15:42:43 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 124650ms.
+Sep 21 15:44:48 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 123920ms.
+Sep 21 15:46:00 ip-172-31-5-199 systemd: Starting Cleanup of Temporary Directories...
+Sep 21 15:46:00 ip-172-31-5-199 systemd: Started Cleanup of Temporary Directories.
+Sep 21 15:46:52 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 118410ms.
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Stopping This is healthd daemon...
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Stopped This is healthd daemon.
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Starting This is healthd daemon...
+Sep 21 15:48:02 ip-172-31-5-199 systemd: Started This is healthd daemon.
+Sep 21 15:48:03 ip-172-31-5-199 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/2.6.0/gems/puma-5.3.2/lib/puma/launcher.rb:80: warning: conflicting chdir during another chdir block
+Sep 21 15:48:03 ip-172-31-5-199 systemd: Stopping System Logging Service...
+Sep 21 15:48:03 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="4337" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Sep 21 15:48:03 ip-172-31-5-199 systemd: Stopped System Logging Service.
+Sep 21 15:48:03 ip-172-31-5-199 systemd: Starting System Logging Service...
+Sep 21 15:48:03 ip-172-31-5-199 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="4850" x-info="http://www.rsyslog.com"] start
+Sep 21 15:48:03 ip-172-31-5-199 systemd: Started System Logging Service.
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep 21 15:48:03 ip-172-31-5-199 systemd: Stopping The nginx HTTP and reverse proxy server...
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Stopped The nginx HTTP and reverse proxy server.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Stopped target eb-app.target.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Stopping This is web daemon...
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Stopped This is web daemon.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reached target eb-app.target.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Starting This is web daemon...
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Started This is web daemon.
+Sep 21 15:48:04 ip-172-31-5-199 systemd: Reloading.
+Sep 21 15:48:05 ip-172-31-5-199 systemd: Starting The nginx HTTP and reverse proxy server...
+Sep 21 15:48:05 ip-172-31-5-199 nginx: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+Sep 21 15:48:05 ip-172-31-5-199 nginx: nginx: configuration file /etc/nginx/nginx.conf test is successful
+Sep 21 15:48:05 ip-172-31-5-199 systemd: Started The nginx HTTP and reverse proxy server.
+Sep 21 15:48:05 ip-172-31-5-199 web: > mean-course@0.0.0 start
+Sep 21 15:48:05 ip-172-31-5-199 web: > node server.js
+Sep 21 15:48:07 ip-172-31-5-199 web: Connected to database.
+Sep 21 15:48:13 ip-172-31-5-199 healthd: Version 2 of the Ruby SDK will enter maintenance mode as of November 20, 2020. To continue receiving service updates and new features, please upgrade to Version 3. More information can be found here: https://aws.amazon.com/blogs/developer/deprecation-schedule-for-aws-sdk-for-ruby-v2/
+Sep 21 15:48:50 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 124110ms.
+Sep 21 15:50:01 ip-172-31-5-199 systemd: Created slice User Slice of root.
+Sep 21 15:50:01 ip-172-31-5-199 systemd: Started Session 2 of user root.
+Sep 21 15:50:01 ip-172-31-5-199 systemd: Started Session 3 of user root.
+Sep 21 15:50:01 ip-172-31-5-199 systemd: Removed slice User Slice of root.
+Sep 21 15:50:55 ip-172-31-5-199 dhclient[2791]: XMT: Solicit on eth0, interval 131550ms.
